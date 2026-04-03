@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saint Lawrence University Institute Ndop - Smart Campus ERP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="loginScreen"></div>
+
+  <div id="appShell" class="app-shell hidden">
+    <aside class="sidebar glass">
+      <div class="brand">
+        <div class="brand-crest">
+          <img id="brandLogo" alt="SLUI logo" class="hidden" />
+          <div id="brandMark">SL</div>
+        </div>
+        <div>
+          <h1 id="brandTitle">SLUI Ndop</h1>
+          <p id="brandSubtitle">Smart Campus ERP</p>
+        </div>
+      </div>
+
+      <div id="userChip" class="user-chip"></div>
+      <nav id="navMenu" class="nav-menu"></nav>
+
+      <div class="sidebar-bottom">
+        <p id="sidebarFooterText">Saint Lawrence University Institute Ndop</p>
+        <button id="logoutBtn" class="btn btn-soft full">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main-shell">
+      <header class="topbar glass">
+        <div>
+          <h2 id="viewTitle">Dashboard</h2>
+          <p id="viewSubtitle">Modern operations for admissions, academics, attendance, finance and transcripts.</p>
+        </div>
+        <div class="topbar-actions">
+          <input id="globalSearch" type="search" placeholder="Search students, courses, faculties, marks, receipts..." />
+          <button id="exportSummaryBtn" class="btn btn-primary">Export Summary</button>
+          <button id="resetBtn" class="btn btn-soft">Reset Demo Data</button>
+        </div>
+      </header>
+
+      <section id="dashboard" class="view active-view"></section>
+      <section id="faculties" class="view"></section>
+      <section id="programs" class="view"></section>
+      <section id="students" class="view"></section>
+      <section id="staff" class="view"></section>
+      <section id="courses" class="view"></section>
+      <section id="enrollment" class="view"></section>
+      <section id="timetable" class="view"></section>
+      <section id="attendance" class="view"></section>
+      <section id="assessments" class="view"></section>
+      <section id="exams" class="view"></section>
+      <section id="fees" class="view"></section>
+      <section id="studentPortal" class="view"></section>
+      <section id="transcripts" class="view"></section>
+      <section id="idcards" class="view"></section>
+      <section id="announcements" class="view"></section>
+      <section id="settings" class="view"></section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
